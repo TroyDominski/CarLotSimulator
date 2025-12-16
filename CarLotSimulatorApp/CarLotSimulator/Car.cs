@@ -4,6 +4,10 @@ namespace CarLotSimulator;
 
 public class Car
 {
+    public Car()
+    {
+        CarLot.numberOfCars++;
+    }
     public int Year { get; set; }
     public string Make { get; set; }
     public string Model { get; set; }
@@ -23,10 +27,6 @@ public class Car
         Console.WriteLine($"The {Year} {Make} {Model}'s horn makes it go {HonkNoise}.");
     }
 
-    public Car()
-    {
-        
-    }
     
         
     
@@ -37,6 +37,7 @@ public class Car
         Model = model;
         Year = year;
         IsDrivable = isDrivable;
+        CarLot.numberOfCars++;
     }
 }
 

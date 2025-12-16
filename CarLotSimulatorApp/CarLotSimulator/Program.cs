@@ -36,6 +36,8 @@ namespace CarLotSimulator
             carThree.MakeHonkNoise("beep beep");
             carLotOne.ParkingLot.Add(carThree);
             carLotOne.CheckCars();
+            
+            Console.WriteLine($"The number of cars int the lot is: {CarLot.numberOfCars}");
 
 
 
